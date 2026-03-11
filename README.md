@@ -1,2 +1,103 @@
-# flower
-gift
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Flower Gift</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    text-align:center;
+    background:#ffe6f2;
+}
+
+/* HEADER */
+
+header{
+    background:#ff4d88;
+    color:white;
+    padding:20px;
+    font-size:28px;
+}
+
+/* MAIN */
+
+section{
+    padding:100px 20px;
+}
+
+button{
+    padding:12px 25px;
+    font-size:18px;
+    border:none;
+    background:#ff4d88;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#e6005c;
+}
+
+.flower{
+    font-size:80px;
+    margin-top:20px;
+}
+
+.message{
+    font-size:22px;
+    margin-top:20px;
+    color:#333;
+}
+
+/* FOOTER */
+
+footer{
+    background:#ff4d88;
+    color:white;
+    padding:15px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+🌸 A Flower For You
+</header>
+
+<section>
+
+<h1>Click the button to receive a flower</h1>
+
+<button onclick="giveFlower()">Give Flower</button>
+
+<div class="flower" id="flower"></div>
+<div class="message" id="msg"></div>
+
+</section>
+
+<footer>
+Made with kindness 💖
+</footer>
+
+<script>
+
+function giveFlower(){
+
+document.getElementById("flower").innerHTML="🌸";
+
+document.getElementById("msg").innerHTML=
+"You are special and deserve beautiful things in life. Here is a flower to brighten your day.";
+
+}
+
+</script>
+
+</body>
+</html>
